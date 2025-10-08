@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import patternImage from "@/assets/pattern-large.jpg";
 
 const Hero = () => {
   return (
@@ -27,13 +28,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Abstract Design Element */}
+          {/* Pattern Image */}
           <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
-            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-teal via-brand-coral to-brand-pink">
-              <div className="absolute top-10 right-10 w-32 h-32 bg-brand-yellow rounded-full opacity-60 animate-pulse"></div>
-              <div className="absolute bottom-20 left-20 w-48 h-48 bg-brand-blue rounded-lg opacity-40 rotate-12"></div>
-              <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-brand-green rounded-full opacity-50"></div>
-              <div className="absolute bottom-32 right-32 w-36 h-36 bg-brand-lime rounded-lg opacity-30 -rotate-6"></div>
+            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={patternImage}
+                alt="Colorful cultural patterns representing diverse languages and cultures"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

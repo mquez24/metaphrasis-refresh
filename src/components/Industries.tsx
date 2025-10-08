@@ -1,33 +1,33 @@
+import patternSmall from "@/assets/pattern-small.jpg";
+
 const Industries = () => {
   const industries = [
-    "Healthcare",
-    "Legal Services",
-    "Corporate",
-    "Education",
-    "Government",
-    "Marketing",
+    "Healthcare & Medical",
+    "Legal & Court Systems",
+    "Education & Academia",
+    "Government & Public Services",
+    "Business & Corporate",
+    "Technology & Software",
+    "Finance & Banking",
+    "Manufacturing",
+    "Hospitality & Tourism",
+    "Marketing & Advertising",
+    "Non-Profit Organizations",
+    "Media & Entertainment",
   ];
 
   return (
     <section id="industries" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Abstract Design Element */}
+          {/* Pattern Image */}
           <div className="order-2 lg:order-1 animate-fade-in">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-teal via-brand-coral to-brand-yellow">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="grid grid-cols-3 gap-4 p-8 w-full h-full opacity-20">
-                  <div className="bg-brand-pink rounded-full"></div>
-                  <div className="bg-brand-blue rounded-lg"></div>
-                  <div className="bg-brand-green rounded-full"></div>
-                  <div className="bg-brand-lime rounded-lg"></div>
-                  <div className="bg-brand-coral rounded-full"></div>
-                  <div className="bg-brand-yellow rounded-lg"></div>
-                  <div className="bg-brand-teal rounded-full"></div>
-                  <div className="bg-brand-pink rounded-lg"></div>
-                  <div className="bg-brand-blue rounded-full"></div>
-                </div>
-              </div>
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={patternSmall}
+                alt="Diverse cultural patterns"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-8">
                   <p className="text-white text-xl font-clavo italic">
