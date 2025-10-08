@@ -4,40 +4,34 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Services = () => {
   const services = [
     {
-      icon: <FileText className="w-8 h-8" />,
-      title: "Document Translation",
-      description: "Accurate translation of legal, medical, technical, and business documents with cultural sensitivity.",
+      icon: <Users className="w-8 h-8" />,
+      title: "On-site Interpretation",
+      description: "Professional interpreters at your location for meetings, conferences, and events.",
       color: "text-brand-teal",
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Live Interpretation",
-      description: "Professional interpreters for meetings, conferences, and events in over 200 languages.",
+      icon: <FileText className="w-8 h-8" />,
+      title: "Telephone Interpretation Services",
+      description: "Immediate language support via phone for quick and efficient communication.",
       color: "text-brand-coral",
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Website Localization",
-      description: "Adapt your digital content for global audiences while maintaining brand consistency.",
+      title: "Video Remote Interpretation",
+      description: "Real-time interpretation through secure video connections from anywhere.",
       color: "text-brand-yellow",
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
-      title: "Transcription Services",
-      description: "Convert audio and video content into written text with precision and speed.",
+      title: "American Sign Language Services",
+      description: "Certified ASL interpreters for deaf and hard-of-hearing communities.",
       color: "text-brand-green",
     },
     {
       icon: <Briefcase className="w-8 h-8" />,
-      title: "Corporate Solutions",
-      description: "Comprehensive language services for businesses operating in multilingual environments.",
+      title: "Conference Interpretation",
+      description: "Simultaneous and consecutive interpretation for large-scale international events.",
       color: "text-brand-pink",
-    },
-    {
-      icon: <Scale className="w-8 h-8" />,
-      title: "Legal & Medical",
-      description: "Specialized translation and interpretation for legal proceedings and healthcare settings.",
-      color: "text-brand-blue",
     },
   ];
 
