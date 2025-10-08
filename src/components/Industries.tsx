@@ -2,18 +2,11 @@ import patternSmall from "@/assets/pattern-small.jpg";
 
 const Industries = () => {
   const industries = [
-    "Healthcare & Medical",
-    "Legal & Court Systems",
-    "Education & Academia",
-    "Government & Public Services",
-    "Business & Corporate",
-    "Technology & Software",
-    "Finance & Banking",
-    "Manufacturing",
-    "Hospitality & Tourism",
-    "Marketing & Advertising",
-    "Non-Profit Organizations",
-    "Media & Entertainment",
+    "Education & Schools",
+    "Government",
+    "Healthcare",
+    "Corporate",
+    "Legal",
   ];
 
   return (
