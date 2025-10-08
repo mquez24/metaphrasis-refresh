@@ -9,14 +9,11 @@ const Hero = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Connect with{" "}
-              <span className="text-brand-teal">your audience</span> in{" "}
-              <span className="text-brand-coral">their language.</span>
+              <span className="text-brand-teal">Everyone Deserves</span> to Be{" "}
+              <span className="text-brand-coral">Understood</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              We weave culture, local dialects and language together to convey
-              deeper meaning and make more authentic connections. Professional
-              translation and interpretation services in Chicago and beyond.
+              We bring clarity and connection to every conversation by honoring both language and culture. Through professional translation and interpretation, we ensure that meaning, emotion, and intent are never lost, helping individuals and organizations truly understand one another.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg">
