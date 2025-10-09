@@ -110,4 +110,51 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
   }
+
+  /* Client marquee animations */
+  .client-marquee {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+
+  .animate-paused {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .animate-scroll {
+      animation: scroll 30s linear infinite;
+    }
+  }
 }
