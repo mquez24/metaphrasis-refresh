@@ -13,14 +13,14 @@ const Hero = () => {
               <span className="text-brand-coral">Understood</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              We bring clarity and connection to every conversation by honoring both language and culture. Through professional translation and interpretation, we ensure that meaning, emotion, and intent are never lost, helping individuals and organizations truly understand one another.
+              We help organizations communicate across languages and cultures — delivering clarity, compassion, and true understanding.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg">
-                Learn How We Can Help
+                Get a Quote
               </Button>
               <Button size="lg" variant="outline" className="text-lg">
-                Get a Quote
+                Learn How We Can Help
               </Button>
             </div>
           </div>

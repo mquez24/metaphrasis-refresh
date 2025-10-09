@@ -1,76 +1,60 @@
-import { CheckCircle2 } from "lucide-react";
+import { Award, Clock, FileCheck, MapPin } from "lucide-react";
+
+const benefits = [
+  {
+    icon: Award,
+    title: "Cultural Expertise",
+    description: "Our translators and interpreters understand cultural nuances that go beyond literal translation.",
+  },
+  {
+    icon: Clock,
+    title: "Over a Decade of Experience",
+    description: "Trusted by organizations nationwide for consistent, high-quality language services.",
+  },
+  {
+    icon: FileCheck,
+    title: "Certified & Compliant",
+    description: "All services meet industry standards including HIPAA, ATA certification, and legal compliance.",
+  },
+  {
+    icon: MapPin,
+    title: "Nationwide Coverage",
+    description: "From Chicago to coast-to-coast, we deliver on-site and remote services wherever you need us.",
+  },
+];
 
 const WhyChooseUs = () => {
-  const benefits = [
-    {
-      title: "Cultural Expertise",
-      description: "Our translators understand context, idioms, and cultural nuances beyond literal translation.",
-    },
-    {
-      title: "Certified Professionals",
-      description: "All interpreters and translators are certified and experienced in their specializations.",
-    },
-    {
-      title: "200+ Languages",
-      description: "From common languages to rare dialects, we connect you with the right linguistic experts.",
-    },
-    {
-      title: "Quick Turnaround",
-      description: "Fast, reliable service without compromising quality or accuracy.",
-    },
-    {
-      title: "Confidential & Secure",
-      description: "Your documents and conversations are handled with utmost privacy and security.",
-    },
-    {
-      title: "Competitive Pricing",
-      description: "Professional language services at transparent, fair rates.",
-    },
-  ];
-
   return (
-    <section className="py-24">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Everyone Deserves to Be{" "}
-              <span className="text-brand-coral">Understood</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Language is more than words—it's the bridge between people,
-              cultures, and understanding. At Metaphrasis, we don't just
-              translate; we preserve meaning, context, and the authentic voice
-              behind every message.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              Our diverse team of translators and interpreters brings together
-              expertise from cultures around the world, embodied in our vibrant
-              visual identity that celebrates linguistic diversity.
-            </p>
-          </div>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Why Organizations Trust <span className="text-brand-teal">Metaphrasis</span>
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Every organization communicates with people who speak, listen, and understand differently. 
+            At Metaphrasis, we make those conversations possible through certified, culturally aware 
+            translators and interpreters who deliver more than words — they deliver understanding.
+          </p>
+        </div>
 
-          {/* Benefits Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {benefits.map((benefit, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon;
+            return (
               <div
                 key={index}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="text-center animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-                    <p className="text-muted-foreground text-sm">
-                      {benefit.description}
-                    </p>
-                  </div>
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-teal/10 mb-4">
+                  <Icon className="w-8 h-8 text-brand-teal" />
                 </div>
+                <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
+                <p className="text-muted-foreground">{benefit.description}</p>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
