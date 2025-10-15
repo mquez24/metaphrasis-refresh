@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -19,20 +20,20 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold tracking-tight">Metaphrasis</h1>
-          </div>
+          <Link to="/" className="flex items-center">
+            <h1 className="text-2xl font-bold tracking-tight hover:text-brand-teal transition-colors cursor-pointer">Metaphrasis</h1>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-sm font-medium text-foreground hover:text-brand-teal transition-colors"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <Button variant="default" size="sm">
               Get a Quote
@@ -53,14 +54,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="block text-sm font-medium text-foreground hover:text-brand-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <Button variant="default" size="sm" className="w-full">
               Get a Quote
