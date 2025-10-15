@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Translation Services", href: "#translation" },
+    { name: "Translation Services", href: "/translation-services" },
     { name: "Interpretation Services", href: "#interpretation" },
     { name: "Industries", href: "#industries" },
     { name: "About", href: "#about" },
