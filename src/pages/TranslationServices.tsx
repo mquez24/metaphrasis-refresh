@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import ServiceDetailCard from "@/components/translation/ServiceDetailCard";
 import MiniTour from "@/components/translation/MiniTour";
 import ProofLayer from "@/components/translation/ProofLayer";
-import QuoteForm from "@/components/translation/QuoteForm";
 import FAQAccordion from "@/components/translation/FAQAccordion";
 import { Award, Clock, FileCheck, MapPin, FileText, Globe, Mic, Volume2, Eye } from "lucide-react";
 
@@ -154,14 +153,6 @@ const TranslationServices = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Certified, secure, and culturally precise document and content translation for healthcare, government, and corporate teams—on time and on budget.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <button className="inline-flex items-center justify-center h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90 font-medium transition-colors">
-                Get a Quote
-              </button>
-              <button className="inline-flex items-center justify-center h-11 rounded-md px-8 border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium transition-colors">
-                Talk to a Specialist
-              </button>
-            </div>
             <p className="text-sm text-muted-foreground">
               ATA-certified translators · Certificate of translation available upon request
             </p>
@@ -255,9 +246,6 @@ const TranslationServices = () => {
 
       {/* FAQ */}
       <FAQAccordion />
-
-      {/* Quote Form */}
-      <QuoteForm />
 
       <Footer />
     </>
