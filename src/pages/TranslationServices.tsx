@@ -6,9 +6,6 @@ import MiniTour from "@/components/translation/MiniTour";
 import ProofLayer from "@/components/translation/ProofLayer";
 import QuoteForm from "@/components/translation/QuoteForm";
 import FAQAccordion from "@/components/translation/FAQAccordion";
-import Certifications from "@/components/Certifications";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
 import { Award, Clock, FileCheck, MapPin, FileText, Globe, Mic, Volume2, Eye } from "lucide-react";
 
 const TranslationServices = () => {
@@ -261,15 +258,6 @@ const TranslationServices = () => {
 
       {/* Quote Form */}
       <QuoteForm />
-
-      {/* Certifications */}
-      <Certifications />
-
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* CTA */}
-      <CTA />
 
       <Footer />
     </>
