@@ -8,7 +8,7 @@ const Header = () => {
 
   const navigation = [
     { name: "Translation Services", href: "/translation-services" },
-    { name: "Interpretation Services", href: "#interpretation" },
+    { name: "Interpretation Services", href: "/interpretation-services" },
     { name: "Industries", href: "#industries" },
     { name: "About", href: "#about" },
     { name: "Careers", href: "#careers" },
