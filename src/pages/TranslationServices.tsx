@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceDetailCard from "@/components/translation/ServiceDetailCard";
 import MiniTour from "@/components/translation/MiniTour";
-import ProofLayer from "@/components/translation/ProofLayer";
 import FAQAccordion from "@/components/translation/FAQAccordion";
 import { Award, Clock, FileCheck, MapPin, FileText, Globe, Mic, Volume2, Eye } from "lucide-react";
 
@@ -213,9 +212,6 @@ const TranslationServices = () => {
 
       {/* Workflows */}
       <MiniTour />
-
-      {/* Proof Layer */}
-      <ProofLayer />
 
       {/* Industries */}
       <section className="py-16 bg-secondary/30">
