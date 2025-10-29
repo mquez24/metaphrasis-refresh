@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
-import northstarMedia from "@/assets/logos/northstar-media.png";
-import atlasHealth from "@/assets/logos/atlas-health.png";
-import unionBank from "@/assets/logos/union-bank.png";
-import brightwaveTech from "@/assets/logos/brightwave-tech.png";
-import summitRetail from "@/assets/logos/summit-retail.png";
-import horizonEducation from "@/assets/logos/horizon-education.png";
-import globalLogistics from "@/assets/logos/global-logistics.png";
-import meridianPharma from "@/assets/logos/meridian-pharma.png";
-import civicTransit from "@/assets/logos/civic-transit.png";
-import oakridgeInsurance from "@/assets/logos/oakridge-insurance.png";
+import girlScouts from "@/assets/logos/girl-scouts.png";
+import chicagoHousing from "@/assets/logos/chicago-housing.png";
+import uchicagoMedicine from "@/assets/logos/uchicago-medicine.png";
+import advocateHealth from "@/assets/logos/advocate-health.png";
+import uiHealth from "@/assets/logos/ui-health.png";
+import usRenalCare from "@/assets/logos/us-renal-care.png";
+import cookCountyHealth from "@/assets/logos/cook-county-health.png";
+import riversCasino from "@/assets/logos/rivers-casino.png";
+import ballyCasino from "@/assets/logos/bally-casino.png";
+import assurance from "@/assets/logos/assurance.png";
 
 const clients = [
-  { name: "NorthStar Media", logo: northstarMedia },
-  { name: "Atlas Health", logo: atlasHealth },
-  { name: "Union Bank", logo: unionBank },
-  { name: "BrightWave Tech", logo: brightwaveTech },
-  { name: "Summit Retail", logo: summitRetail },
-  { name: "Horizon Education", logo: horizonEducation },
-  { name: "Global Logistics", logo: globalLogistics },
-  { name: "Meridian Pharmaceuticals", logo: meridianPharma },
-  { name: "Civic Transit", logo: civicTransit },
-  { name: "Oakridge Insurance", logo: oakridgeInsurance },
+  { name: "Girl Scouts of Greater Chicago and Northwest Indiana", logo: girlScouts },
+  { name: "Chicago Housing Authority", logo: chicagoHousing },
+  { name: "UChicago Medicine", logo: uchicagoMedicine },
+  { name: "Advocate Health Care", logo: advocateHealth },
+  { name: "UI Health", logo: uiHealth },
+  { name: "U.S. Renal Care", logo: usRenalCare },
+  { name: "Cook County Health", logo: cookCountyHealth },
+  { name: "Rivers Casino", logo: riversCasino },
+  { name: "Bally Casino", logo: ballyCasino },
+  { name: "Assurance", logo: assurance },
 ];
 
 const ClientBanner = () => {
