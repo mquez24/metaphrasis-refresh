@@ -1,18 +1,18 @@
 const Certifications = () => {
   const certifications = [
-    "WBENC Certified",
-    "Women-Owned Business",
-    "ATA Certified",
-    "HIPAA Compliant",
-    "NGLCC Certified",
+    "MBE (Cook County)",
+    "DBE",
+    "WBENC",
+    "Small Business Owner",
+    "BEP WBENC",
   ];
 
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <p className="text-center text-sm font-medium text-muted-foreground mb-8">
-          Certified and trusted by leading institutions nationwide
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          Certifications
+        </h2>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {certifications.map((cert, index) => (
             <div
@@ -23,6 +23,9 @@ const Certifications = () => {
             </div>
           ))}
         </div>
+        <p className="text-center text-sm font-medium text-muted-foreground mt-8">
+          WBENC Certified • Women-Owned • Minority-Owned • Small Business
+        </p>
       </div>
     </section>
   );

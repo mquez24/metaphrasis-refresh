@@ -8,15 +8,14 @@ const Services = () => {
     { icon: Mic, title: "Audio Transcription", color: "text-brand-yellow" },
     { icon: Volume2, title: "Voice Over", color: "text-brand-green" },
     { icon: Eye, title: "Braille", color: "text-brand-pink" },
+    { icon: FileText, title: "Captioning / Video Captioning", color: "text-brand-blue" },
   ];
 
   const interpretationServices = [
     { icon: Users, title: "On-Site Interpreting", color: "text-brand-teal" },
-    { icon: Phone, title: "Over-the-Phone", color: "text-brand-coral" },
-    { icon: Video, title: "Video Remote", color: "text-brand-yellow" },
-    { icon: Hand, title: "American Sign Language", color: "text-brand-green" },
-    { icon: Presentation, title: "Conference & Events", color: "text-brand-pink" },
-    { icon: Stethoscope, title: "Medical Interpreting", color: "text-brand-blue" },
+    { icon: Video, title: "Video Remote Interpreting", color: "text-brand-coral" },
+    { icon: Phone, title: "Telephonic Interpreting", color: "text-brand-yellow" },
+    { icon: Presentation, title: "Simultaneous Interpreting", color: "text-brand-green" },
   ];
 
   return (
@@ -24,14 +23,11 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Professional Language Solutions{" "}
+            Language Solutions{" "}
             <span className="text-brand-teal">Tailored to You</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Metaphrasis provides certified translation and interpretation services that help 
-            organizations communicate clearly across languages and cultures. From document and 
-            website translation to on-site and video interpreting, our team delivers accuracy, 
-            confidentiality, and cultural understanding every time.
+            Our language solutions are designed to meet the unique needs of every client—ensuring accuracy, cultural understanding, and care while providing innovative, secure, and scalable solutions that drive results.
           </p>
         </div>
 
@@ -62,7 +58,7 @@ const Services = () => {
 
           {/* Interpretation Services */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-center lg:text-left">Interpretation Services</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center lg:text-left">Interpreting Services</h3>
             <div className="grid gap-4">
               {interpretationServices.map((service, index) => {
                 const Icon = service.icon;

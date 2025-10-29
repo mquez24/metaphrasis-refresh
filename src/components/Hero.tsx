@@ -9,15 +9,14 @@ const Hero = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              <span className="text-brand-teal">Everyone Deserves</span> to Be{" "}
-              <span className="text-brand-coral">Understood</span>
+              Everyone Deserves to Be <span className="text-brand-teal">Understood</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              We help organizations communicate across languages and cultures — delivering clarity, compassion, and true understanding.
+              Metaphrasis helps you communicate clearly, inclusively, and effectively—anytime, anywhere, in over 100 languages. From interpreting and translations to transcription, braille, and voiceover services, we empower global communication through a unique blend of advanced AI tools and expert human linguists.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg">
-                Get a Quote
+                Request a Quote
               </Button>
               <Button size="lg" variant="outline" className="text-lg">
                 Learn How We Can Help

@@ -46,7 +46,7 @@ const ClientBanner = () => {
     <section className="py-12 md:py-16 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-sm md:text-base font-medium text-foreground/70 mb-8 text-left">
-          Trusted by organizations across industries
+          Our Value-Aligned Partners
         </h2>
 
         <div

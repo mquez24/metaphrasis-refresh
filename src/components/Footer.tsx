@@ -1,5 +1,4 @@
 import { Linkedin } from "lucide-react";
-import patternSmall from "@/assets/pattern-small.jpg";
 
 const Footer = () => {
   return (
@@ -45,11 +44,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground">
-                123 W Madison Street, Suite 500, Chicago, IL 60602
+                info@metaphrasislcs.com | (815) 464-1423
               </p>
-              <p className="text-sm text-muted-foreground">
-                info@metaphrasis.com | (312) 555-0100
-              </p>
+              <a 
+                href="#contact" 
+                className="text-sm text-muted-foreground hover:text-brand-teal transition-colors inline-block mt-1"
+              >
+                Contact Us
+              </a>
             </div>
             <a
               href="#"
@@ -68,11 +70,9 @@ const Footer = () => {
             <span>•</span>
             <span>Women-Owned</span>
             <span>•</span>
-            <span>ATA Certified</span>
+            <span>Minority-Owned</span>
             <span>•</span>
-            <span>HIPAA Compliant</span>
-            <span>•</span>
-            <span>NGLCC</span>
+            <span>Small Business</span>
           </div>
         </div>
 
@@ -82,14 +82,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Pattern Strip */}
-      <div className="h-2 w-full overflow-hidden">
-        <img
-          src={patternSmall}
-          alt=""
-          className="w-full h-full object-cover opacity-60"
-        />
-      </div>
     </footer>
   );
 };

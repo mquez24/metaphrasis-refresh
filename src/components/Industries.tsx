@@ -1,14 +1,17 @@
-import { Building2, Scale, Briefcase, GraduationCap, Landmark, Calendar } from "lucide-react";
+import { Stethoscope, Scale, Briefcase, GraduationCap, Landmark, Calendar, Heart, Megaphone, Factory } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Industries = () => {
   const industries = [
-    { icon: Building2, title: "Healthcare", color: "text-brand-teal" },
-    { icon: Scale, title: "Legal", color: "text-brand-coral" },
-    { icon: Briefcase, title: "Corporate & Business", color: "text-brand-yellow" },
-    { icon: GraduationCap, title: "Education", color: "text-brand-green" },
-    { icon: Landmark, title: "Government & Nonprofit", color: "text-brand-pink" },
-    { icon: Calendar, title: "Events & Conferences", color: "text-brand-blue" },
+    { icon: Stethoscope, title: "Healthcare", color: "text-brand-green" },
+    { icon: Scale, title: "Legal", color: "text-brand-teal" },
+    { icon: Briefcase, title: "Corporate", color: "text-brand-blue" },
+    { icon: GraduationCap, title: "Education", color: "text-brand-coral" },
+    { icon: Landmark, title: "Government", color: "text-brand-yellow" },
+    { icon: Calendar, title: "Events & Conferences", color: "text-brand-pink" },
+    { icon: Heart, title: "Non-Profit", color: "text-brand-green" },
+    { icon: Megaphone, title: "Digital Marketing + Public Relations", color: "text-brand-teal" },
+    { icon: Factory, title: "Manufacturing", color: "text-brand-blue" },
   ];
 
   return (
@@ -19,8 +22,7 @@ const Industries = () => {
             Expertise Across <span className="text-brand-teal">Industries</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From healthcare to legal and corporate sectors, Metaphrasis provides industry-specific 
-            expertise that ensures accuracy, compliance, and cultural relevance.
+            From healthcare to legal to Fortune 500 companies, Metaphrasis provides industry-specific expertise that ensures accuracy, compliance, and cultural relevance.
           </p>
         </div>
 

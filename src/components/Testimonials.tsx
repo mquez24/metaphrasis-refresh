@@ -25,7 +25,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            What Our <span className="text-brand-teal">Clients Say</span>
+            Proof in <span className="text-brand-teal">Partnerships</span>
           </h2>
         </div>
 

@@ -29,7 +29,7 @@ const CTA = () => {
               <Mail className="w-6 h-6 text-brand-teal flex-shrink-0" />
               <div>
                 <p className="font-medium mb-1">Email</p>
-                <p className="text-sm text-background/70">info@metaphrasis.com</p>
+                <p className="text-sm text-background/70">info@metaphrasislcs.com</p>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ const CTA = () => {
               <Phone className="w-6 h-6 text-brand-coral flex-shrink-0" />
               <div>
                 <p className="font-medium mb-1">Phone</p>
-                <p className="text-sm text-background/70">(312) 555-0100</p>
+                <p className="text-sm text-background/70">(815) 464-1423</p>
               </div>
             </div>
 

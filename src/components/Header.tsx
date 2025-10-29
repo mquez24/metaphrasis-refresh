@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <h1 className="text-2xl font-bold tracking-tight hover:text-brand-teal transition-colors cursor-pointer">Metaphrasis</h1>
+            <h1 className="text-3xl md:text-4xl font-black tracking-tight text-foreground hover:text-brand-teal transition-colors cursor-pointer">Metaphrasis</h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ const Header = () => {
               </Link>
             ))}
             <Button variant="default" size="sm">
-              Get a Quote
+              Request a Quote
             </Button>
           </div>
 
@@ -64,7 +64,7 @@ const Header = () => {
               </Link>
             ))}
             <Button variant="default" size="sm" className="w-full">
-              Get a Quote
+              Request a Quote
             </Button>
           </div>
         )}
