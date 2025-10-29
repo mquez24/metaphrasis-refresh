@@ -9,6 +9,16 @@ import cookCountyHealth from "@/assets/logos/cook-county-health.png";
 import riversCasino from "@/assets/logos/rivers-casino.png";
 import ballyCasino from "@/assets/logos/bally-casino.png";
 import assurance from "@/assets/logos/assurance.png";
+import navigantLaw from "@/assets/logos/navigant-law.png";
+import comcast from "@/assets/logos/comcast.png";
+import oracle from "@/assets/logos/oracle.png";
+import medicalHomeNetwork from "@/assets/logos/medical-home-network.png";
+import pearson from "@/assets/logos/pearson.png";
+import columbiaCollege from "@/assets/logos/columbia-college.png";
+import dominicanUniversity from "@/assets/logos/dominican-university.png";
+import span from "@/assets/logos/span.png";
+import resPublica from "@/assets/logos/res-publica.png";
+import purpleGroup from "@/assets/logos/purple-group.png";
 
 const clients = [
   { name: "Girl Scouts of Greater Chicago and Northwest Indiana", logo: girlScouts },
@@ -21,6 +31,16 @@ const clients = [
   { name: "Rivers Casino", logo: riversCasino },
   { name: "Bally Casino", logo: ballyCasino },
   { name: "Assurance", logo: assurance },
+  { name: "Navigant Law Group LLC", logo: navigantLaw },
+  { name: "Comcast", logo: comcast },
+  { name: "Oracle", logo: oracle },
+  { name: "Medical Home Network", logo: medicalHomeNetwork },
+  { name: "Pearson", logo: pearson },
+  { name: "Columbia College Chicago", logo: columbiaCollege },
+  { name: "Dominican University", logo: dominicanUniversity },
+  { name: "SPAN", logo: span },
+  { name: "Res Publica Group", logo: resPublica },
+  { name: "Purple Group", logo: purpleGroup },
 ];
 
 const ClientBanner = () => {
