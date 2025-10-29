@@ -17,7 +17,7 @@ const FounderQuote = () => {
                 <img
                   src={founderPhoto}
                   alt="Elizabeth Colón, Founder & President"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover object-top scale-110"
                 />
               </div>
             </div>
