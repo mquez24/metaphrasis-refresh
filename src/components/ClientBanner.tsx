@@ -19,6 +19,9 @@ import dominicanUniversity from "@/assets/logos/dominican-university.png";
 import span from "@/assets/logos/span.png";
 import resPublica from "@/assets/logos/res-publica.png";
 import purpleGroup from "@/assets/logos/purple-group.png";
+import ten3 from "@/assets/logos/ten3.png";
+import greaterChicagoFood from "@/assets/logos/greater-chicago-food.png";
+import uic from "@/assets/logos/uic.png";
 
 const clients = [
   { name: "Girl Scouts of Greater Chicago and Northwest Indiana", logo: girlScouts },
@@ -41,6 +44,9 @@ const clients = [
   { name: "SPAN", logo: span },
   { name: "Res Publica Group", logo: resPublica },
   { name: "Purple Group", logo: purpleGroup },
+  { name: "TEN3", logo: ten3 },
+  { name: "Greater Chicago Food Depository", logo: greaterChicagoFood },
+  { name: "UIC", logo: uic },
 ];
 
 const ClientBanner = () => {
