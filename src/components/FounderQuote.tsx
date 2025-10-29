@@ -1,3 +1,4 @@
+import founderPhoto from "@/assets/elizabeth-colon.png";
 import patternSmall from "@/assets/pattern-small.jpg";
 
 const FounderQuote = () => {
@@ -14,7 +15,7 @@ const FounderQuote = () => {
             <div className="lg:col-span-1 flex justify-center">
               <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl">
                 <img
-                  src={patternSmall}
+                  src={founderPhoto}
                   alt="Elizabeth Colón, Founder & President"
                   className="w-full h-full object-cover"
                 />
