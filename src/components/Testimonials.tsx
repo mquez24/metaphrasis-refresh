@@ -1,12 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import wbdcLogo from "@/assets/logos/wbdc.png";
 import shrinersLogo from "@/assets/logos/shriners-hospital.png";
 import resPublicaLogo from "@/assets/logos/res-publica-testimonial.png";
@@ -61,42 +55,33 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-5xl mx-auto"
-        >
-          <CarouselContent>
+        <ScrollArea className="w-full whitespace-nowrap">
+          <div className="flex gap-6 pb-4">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
-                <Card className="p-8 h-full flex flex-col">
-                  <div className="flex items-center gap-4 mb-6">
-                    <img
-                      src={testimonial.logo}
-                      alt={testimonial.organization}
-                      className="h-16 w-auto object-contain"
-                    />
-                  </div>
-                  <Quote className="w-10 h-10 text-brand-coral mb-4" />
-                  <p className="text-lg mb-6 italic flex-grow">{testimonial.quote}</p>
-                  <div className="border-t pt-4">
-                    <p className="font-semibold">{testimonial.author}</p>
-                    {testimonial.title && (
-                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                    )}
-                    <p className="text-sm text-muted-foreground font-medium">
-                      {testimonial.organization}
-                    </p>
-                  </div>
-                </Card>
-              </CarouselItem>
+              <Card key={index} className="p-8 w-[450px] flex-shrink-0 flex flex-col">
+                <div className="flex items-center gap-4 mb-6">
+                  <img
+                    src={testimonial.logo}
+                    alt={testimonial.organization}
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
+                <Quote className="w-10 h-10 text-brand-coral mb-4" />
+                <p className="text-lg mb-6 italic flex-grow whitespace-normal">{testimonial.quote}</p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold">{testimonial.author}</p>
+                  {testimonial.title && (
+                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  )}
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {testimonial.organization}
+                  </p>
+                </div>
+              </Card>
             ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </div>
     </section>
   );
