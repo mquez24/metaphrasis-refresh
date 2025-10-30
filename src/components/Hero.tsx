@@ -26,13 +26,15 @@ const Hero = () => {
           {/* Video */}
           <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/eghSnD9l2AM?autoplay=1&mute=1&loop=1&playlist=eghSnD9l2AM&controls=0&modestbranding=1&rel=0"
-                title="Everyone Deserves to Be Understood"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <div className="relative w-full h-full">
+                <iframe
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77%] h-[177.77%]"
+                  src="https://www.youtube.com/embed/eghSnD9l2AM?autoplay=1&mute=1&loop=1&playlist=eghSnD9l2AM&controls=0&modestbranding=1&rel=0"
+                  title="Everyone Deserves to Be Understood"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
