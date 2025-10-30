@@ -13,7 +13,7 @@ All colors MUST be HSL.
     --foreground: 0 0% 0%;
 
     /* Brand accent colors from pattern */
-    --brand-teal: 180 85% 45%;
+    --brand-teal: 180 80% 38%;
     --brand-coral: 5 75% 60%;
     --brand-yellow: 45 95% 55%;
     --brand-green: 165 65% 45%;
@@ -34,9 +34,9 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 0%;
 
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 30%;
+    --muted-foreground: 0 0% 20%;
 
-    --accent: 180 85% 45%;
+    --accent: 180 80% 38%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -109,6 +109,34 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @keyframes subtleZoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      opacity: 0.9;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-subtle-zoom {
+    animation: subtleZoom 20s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
   }
 
   /* Client marquee animations */

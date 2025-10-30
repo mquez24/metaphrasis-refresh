@@ -1,14 +1,14 @@
 import { Card } from "@/components/ui/card";
-import { FileText, Globe, Mic, Volume2, Eye, Users, Phone, Video, Hand, Presentation, Stethoscope } from "lucide-react";
+import { FileText, Globe, Mic, Users, Phone, Video, Presentation, Shapes, Captions } from "lucide-react";
 
 const Services = () => {
   const translationServices = [
     { icon: FileText, title: "Document Translation", color: "text-brand-teal" },
     { icon: Globe, title: "Website Translation", color: "text-brand-coral" },
     { icon: Mic, title: "Audio Transcription", color: "text-brand-yellow" },
-    { icon: Volume2, title: "Voice Over", color: "text-brand-green" },
-    { icon: Eye, title: "Braille", color: "text-brand-pink" },
-    { icon: FileText, title: "Captioning / Video Captioning", color: "text-brand-blue" },
+    { icon: Mic, title: "Voiceover", color: "text-brand-green" },
+    { icon: Shapes, title: "Braille", color: "text-brand-pink" },
+    { icon: Captions, title: "Video Captioning", color: "text-brand-blue" },
   ];
 
   const interpretationServices = [
