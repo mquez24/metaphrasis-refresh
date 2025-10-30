@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import patternImage from "@/assets/pattern-large.jpg";
 
 const Hero = () => {
   return (
@@ -24,19 +23,16 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Pattern Image with Animation */}
+          {/* Video */}
           <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={patternImage}
-                alt="Colorful cultural patterns representing diverse languages and cultures"
-                className="w-full h-full object-cover animate-subtle-zoom"
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/eghSnD9l2AM?autoplay=1&mute=1&loop=1&playlist=eghSnD9l2AM&controls=0&modestbranding=1&rel=0"
+                title="Everyone Deserves to Be Understood"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end justify-center pb-12">
-                <p className="text-white text-2xl md:text-3xl font-bold text-center px-6 animate-pulse-soft">
-                  Everyone Deserves to Be Understood
-                </p>
-              </div>
             </div>
           </div>
         </div>
