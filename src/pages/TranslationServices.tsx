@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ServiceDetailCard from "@/components/translation/ServiceDetailCard";
 import MiniTour from "@/components/translation/MiniTour";
 import FAQAccordion from "@/components/translation/FAQAccordion";
-import { Award, Clock, FileCheck, MapPin, FileText, Globe, Mic, Volume2, Eye } from "lucide-react";
+import { Award, Clock, FileCheck, MapPin, FileText, Globe, Mic, Volume2, Eye, Languages, MapPinned, Subtitles } from "lucide-react";
 
 const TranslationServices = () => {
   const benefits = [
@@ -39,80 +39,62 @@ const TranslationServices = () => {
       icon: FileText,
       title: "Document Translation",
       value: "Legal, medical, corporate; certificate eligibility",
-      bullets: [
-        "Preserve formatting and confidentiality",
-        "Meet regulatory filing deadlines",
-        "Maintain brand voice across languages"
-      ],
-      fileTypes: "PDF, DOCX, XLSX, PPTX, InDesign",
-      turnaround: "24h rush to 5-day standard",
-      compliance: ["ATA Certified", "HIPAA-aware", "Notarization available"],
       color: "text-brand-teal"
     },
     {
       icon: Globe,
       title: "Website Translation",
       value: "CMS workflows, SEO/hreflang, string QA",
-      bullets: [
-        "Integrate with your CMS or provide translation-ready files",
-        "Optimize for search engines in target markets",
-        "Test all UI strings in context before launch"
-      ],
-      fileTypes: "JSON, XML, HTML, WordPress, Shopify",
-      turnaround: "Scoped per page count & lang pairs",
-      compliance: ["SEO optimized", "Glossary lock", "QA in staging"],
       color: "text-brand-coral"
     },
     {
       icon: Mic,
       title: "Audio Transcription",
       value: "Timestamps, speaker labels, glossary injection",
-      bullets: [
-        "Capture every word with precision timing",
-        "Identify speakers for clarity",
-        "Apply custom terminology consistently"
-      ],
-      fileTypes: "MP3, WAV, M4A, video files",
-      turnaround: "1-3 days per audio hour",
-      compliance: ["Time-coded", "Multi-speaker", "Clean verbatim options"],
       color: "text-brand-yellow"
     },
     {
       icon: Volume2,
       title: "Voice Over",
       value: "Casting, timing to picture, usage rights",
-      bullets: [
-        "Match tone and pacing to your brand",
-        "Sync to video or multimedia",
-        "License recordings for your distribution needs"
-      ],
-      fileTypes: "Script + video reference",
-      turnaround: "5-10 days incl. casting & recording",
-      compliance: ["Native talent", "Commercial rights", "Revision included"],
       color: "text-brand-green"
     },
     {
       icon: Eye,
       title: "Braille",
       value: "BANA compliance; large-print variants",
-      bullets: [
-        "Meet accessibility mandates",
-        "Ensure accurate tactile reading",
-        "Offer alternative formats for low vision"
-      ],
-      fileTypes: "Any text document",
-      turnaround: "7-10 days; rush available",
-      compliance: ["BANA Grade 2", "Large print", "Digital + embossed"],
       color: "text-brand-pink"
+    },
+    {
+      icon: Languages,
+      title: "Transcreation",
+      value: "Creative adaptation for marketing and advertising",
+      color: "text-brand-blue"
+    },
+    {
+      icon: MapPinned,
+      title: "Localization",
+      value: "Cultural adaptation for global markets",
+      color: "text-brand-teal"
+    },
+    {
+      icon: Subtitles,
+      title: "Video Captioning",
+      value: "Accurate subtitles and closed captions",
+      color: "text-brand-coral"
     },
   ];
 
   const industries = [
-    { name: "Education & Schools", description: "Student records, IEPs, parent communications" },
-    { name: "Government", description: "Public notices, forms, constituent services" },
     { name: "Healthcare", description: "Patient materials, clinical trials, informed consent" },
-    { name: "Corporate", description: "HR docs, training, contracts, investor relations" },
     { name: "Legal", description: "Litigation, depositions, patents, regulatory filings" },
+    { name: "Corporate", description: "HR docs, training, contracts, investor relations" },
+    { name: "Education", description: "Student records, IEPs, parent communications" },
+    { name: "Government", description: "Public notices, forms, constituent services" },
+    { name: "Events & Conferences", description: "Event materials, programs, attendee communications" },
+    { name: "Non-Profit", description: "Grant applications, donor communications, program materials" },
+    { name: "Digital Marketing + Public Relations", description: "Campaign content, press releases, social media" },
+    { name: "Manufacturing", description: "Technical manuals, safety documentation, product specs" },
   ];
 
   return (
@@ -147,10 +129,10 @@ const TranslationServices = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Translation Services for <span className="text-brand-teal">Organizations</span>
+              Translation <span className="text-brand-teal">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Certified, secure, and culturally precise document and content translation for healthcare, government, and corporate teams—on time and on budget.
+              From contracts and policies to marketing collateral and training manuals, our translation services guarantee accuracy, consistency, and cultural sensitivity. Using AI-powered tools enhanced with human linguists, we deliver fast, scalable translations while maintaining your brand's voice and global reach.
             </p>
             <p className="text-sm text-muted-foreground">
               ATA-certified translators · Certificate of translation available upon request
@@ -164,10 +146,10 @@ const TranslationServices = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold mb-6">
-              Why Metaphrasis for <span className="text-brand-teal">Translation</span>
+              Why <span className="text-brand-teal">Metaphrasis</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              We deliver clarity, compassion, and compliance in every project—because accurate translation isn't just about words, it's about understanding and trust.
+              Every project matters. We combine clarity, compassion, and compliance to ensure translations you can trust.
             </p>
           </div>
 
