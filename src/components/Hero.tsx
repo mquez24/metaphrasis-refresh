@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
               <div className="relative w-full h-full">
                 <iframe
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77%] h-[177.77%]"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%]"
                   src="https://www.youtube.com/embed/eghSnD9l2AM?autoplay=1&mute=1&loop=1&playlist=eghSnD9l2AM&controls=0&modestbranding=1&rel=0"
                   title="Everyone Deserves to Be Understood"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
