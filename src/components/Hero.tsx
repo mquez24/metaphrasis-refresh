@@ -4,16 +4,16 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col gap-12 max-w-5xl mx-auto">
           {/* Content */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Everyone Deserves to Be <span className="text-brand-teal">Understood</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Metaphrasis helps you communicate clearly, inclusively, and effectively—anytime, anywhere, in over 100 languages. From interpreting and translations to transcription, braille, and voiceover services, we empower global communication through a unique blend of advanced AI tools and expert human linguists.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg">
                 Request a Quote
               </Button>
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
 
           {/* Video */}
-          <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
+          <div className="relative w-full aspect-video animate-fade-in">
             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
               <div className="relative w-full h-full">
                 <iframe
