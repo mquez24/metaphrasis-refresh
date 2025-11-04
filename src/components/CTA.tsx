@@ -18,7 +18,7 @@ const CTA = () => {
             <Button size="lg" variant="secondary" className="text-lg">
               Request a Quote
             </Button>
-            <Button size="lg" variant="outline" className="text-lg border-background bg-background text-foreground hover:bg-background/80">
+            <Button size="lg" variant="outline" className="text-lg border-background bg-background !text-foreground hover:bg-background/80">
               Contact Us
             </Button>
           </div>
