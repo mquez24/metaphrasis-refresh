@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { LucideIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ServiceDetailCardProps {
   icon: LucideIcon;
@@ -7,6 +8,7 @@ interface ServiceDetailCardProps {
   value: string;
   color: string;
   index: number;
+  link?: string;
 }
 
 const ServiceDetailCard = ({
@@ -15,6 +17,7 @@ const ServiceDetailCard = ({
   value,
   color,
   index,
+  link,
 }: ServiceDetailCardProps) => {
   return (
     <Card
@@ -31,9 +34,18 @@ const ServiceDetailCard = ({
         </div>
       </div>
 
-      <button className="mt-4 w-full inline-flex items-center justify-center h-9 rounded-md px-4 border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium text-sm transition-colors">
-        Learn More
-      </button>
+      {link ? (
+        <Link 
+          to={link}
+          className="mt-4 w-full inline-flex items-center justify-center h-9 rounded-md px-4 border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium text-sm transition-colors"
+        >
+          Learn More
+        </Link>
+      ) : (
+        <button className="mt-4 w-full inline-flex items-center justify-center h-9 rounded-md px-4 border border-input bg-background hover:bg-accent hover:text-accent-foreground font-medium text-sm transition-colors">
+          Learn More
+        </button>
+      )}
     </Card>
   );
 };

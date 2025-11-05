@@ -39,7 +39,8 @@ const TranslationServices = () => {
       icon: FileText,
       title: "Document Translation",
       value: "Legal, medical, corporate; certificate eligibility",
-      color: "text-brand-teal"
+      color: "text-brand-teal",
+      link: "/translation-services/document-translation"
     },
     {
       icon: Globe,
