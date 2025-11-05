@@ -48,15 +48,13 @@ const DocumentTranslation = () => {
     "Technical document translation"
   ];
 
-  const navigate = useNavigate();
-
   // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const handleGetQuote = () => {
-    navigate('/translation-services#quote-form');
+    window.open('https://wkf.ms/47CpWLq', '_blank');
   };
 
   return (
