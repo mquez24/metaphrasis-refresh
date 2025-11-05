@@ -15,9 +15,9 @@ const InterpretationServices = () => {
     },
     {
       icon: Phone,
-      title: "Telephone Interpretation Services",
+      title: "Over the Phone Interpreter",
       description: "Instant language access 24/7 with qualified interpreters on demand.",
-      color: "text-brand-coral"
+      color: "text-brand-green"
     },
     {
       icon: Video,
@@ -170,6 +170,11 @@ const InterpretationServices = () => {
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                   {index === 0 ? (
                     <Link to="/interpretation-services/on-site-interpreting" className="text-brand-teal hover:text-brand-teal/80 transition-colors font-medium inline-flex items-center group">
+                      Learn More
+                      <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
+                  ) : index === 1 ? (
+                    <Link to="/interpretation-services/over-phone-interpreter" className="text-brand-green hover:text-brand-green/80 transition-colors font-medium inline-flex items-center group">
                       Learn More
                       <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
                     </Link>
