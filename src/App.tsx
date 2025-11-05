@@ -9,6 +9,7 @@ import DocumentTranslation from "./pages/DocumentTranslation";
 import WebsiteTranslation from "./pages/WebsiteTranslation";
 import AudioTranscription from "./pages/AudioTranscription";
 import VoiceOver from "./pages/VoiceOver";
+import Braille from "./pages/Braille";
 import InterpretationServices from "./pages/InterpretationServices";
 import Industries from "./pages/Industries";
 import About from "./pages/About";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/translation-services/website-translation" element={<WebsiteTranslation />} />
           <Route path="/translation-services/audio-transcription" element={<AudioTranscription />} />
           <Route path="/translation-services/voice-over" element={<VoiceOver />} />
+          <Route path="/translation-services/braille" element={<Braille />} />
           <Route path="/interpretation-services" element={<InterpretationServices />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />

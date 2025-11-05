@@ -67,7 +67,8 @@ const TranslationServices = () => {
       icon: Eye,
       title: "Braille",
       value: "BANA compliance; large-print variants",
-      color: "text-brand-pink"
+      color: "text-brand-pink",
+      link: "/translation-services/braille"
     },
     {
       icon: Languages,
