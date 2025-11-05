@@ -1,14 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { FileText, Globe, Mic, Users, Phone, Video, Presentation, Shapes, Captions } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const translationServices = [
-    { icon: FileText, title: "Document Translation", color: "text-brand-teal" },
-    { icon: Globe, title: "Website Translation", color: "text-brand-coral" },
-    { icon: Mic, title: "Audio Transcription", color: "text-brand-yellow" },
-    { icon: Mic, title: "Voiceover", color: "text-brand-green" },
-    { icon: Shapes, title: "Braille", color: "text-brand-pink" },
-    { icon: Captions, title: "Video Captioning", color: "text-brand-blue" },
+    { icon: FileText, title: "Document Translation", color: "text-brand-teal", link: "/translation-services/document-translation" },
+    { icon: Globe, title: "Website Translation", color: "text-brand-coral", link: "/translation-services/website-translation" },
+    { icon: Mic, title: "Audio Transcription", color: "text-brand-yellow", link: "/translation-services/audio-transcription" },
+    { icon: Mic, title: "Voiceover", color: "text-brand-green", link: "/translation-services/voice-over" },
+    { icon: Shapes, title: "Braille", color: "text-brand-pink", link: "/translation-services/braille" },
+    { icon: Captions, title: "Video Captioning", color: "text-brand-blue", link: "/translation-services" },
   ];
 
   const interpretationServices = [
@@ -39,18 +40,19 @@ const Services = () => {
               {translationServices.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <Card
-                    key={index}
-                    className="p-6 hover:shadow-lg transition-shadow animate-fade-in"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className={`${service.color}`}>
-                        <Icon className="w-8 h-8" />
+                  <Link key={index} to={service.link}>
+                    <Card
+                      className="p-6 hover:shadow-lg transition-shadow animate-fade-in cursor-pointer"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className={`${service.color}`}>
+                          <Icon className="w-8 h-8" />
+                        </div>
+                        <h4 className="text-lg font-semibold">{service.title}</h4>
                       </div>
-                      <h4 className="text-lg font-semibold">{service.title}</h4>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 );
               })}
             </div>
