@@ -16,6 +16,7 @@ import OnSiteInterpreting from "./pages/OnSiteInterpreting";
 import OverPhoneInterpreter from "./pages/OverPhoneInterpreter";
 import VideoRemoteInterpreter from "./pages/VideoRemoteInterpreter";
 import SignLanguageServices from "./pages/SignLanguageServices";
+import ConferenceInterpreting from "./pages/ConferenceInterpreting";
 import Industries from "./pages/Industries";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/interpretation-services/over-phone-interpreter" element={<OverPhoneInterpreter />} />
           <Route path="/interpretation-services/video-remote-interpretation" element={<VideoRemoteInterpreter />} />
           <Route path="/interpretation-services/sign-language-services" element={<SignLanguageServices />} />
+          <Route path="/interpretation-services/conference-interpreting" element={<ConferenceInterpreting />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
