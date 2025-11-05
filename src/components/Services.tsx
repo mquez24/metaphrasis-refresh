@@ -13,10 +13,10 @@ const Services = () => {
   ];
 
   const interpretationServices = [
-    { icon: Users, title: "On-Site Interpreting", color: "text-brand-teal" },
-    { icon: Video, title: "Video Remote Interpreting", color: "text-brand-coral" },
-    { icon: Phone, title: "Telephonic Interpreting", color: "text-brand-yellow" },
-    { icon: Presentation, title: "Simultaneous Interpreting", color: "text-brand-green" },
+    { icon: Users, title: "On-Site Interpreting", color: "text-brand-teal", link: "/interpretation-services/on-site-interpreting" },
+    { icon: Video, title: "Video Remote Interpreting", color: "text-brand-coral", link: "/interpretation-services/video-remote-interpretation" },
+    { icon: Phone, title: "Telephonic Interpreting", color: "text-brand-yellow", link: "/interpretation-services/over-phone-interpreter" },
+    { icon: Presentation, title: "Simultaneous Interpreting", color: "text-brand-green", link: "/interpretation-services" },
   ];
 
   return (
@@ -65,18 +65,19 @@ const Services = () => {
               {interpretationServices.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <Card
-                    key={index}
-                    className="p-6 hover:shadow-lg transition-shadow animate-fade-in"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className={`${service.color}`}>
-                        <Icon className="w-8 h-8" />
+                  <Link key={index} to={service.link}>
+                    <Card
+                      className="p-6 hover:shadow-lg transition-shadow animate-fade-in cursor-pointer"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className={`${service.color}`}>
+                          <Icon className="w-8 h-8" />
+                        </div>
+                        <h4 className="text-lg font-semibold">{service.title}</h4>
                       </div>
-                      <h4 className="text-lg font-semibold">{service.title}</h4>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 );
               })}
             </div>
