@@ -46,7 +46,8 @@ const TranslationServices = () => {
       icon: Globe,
       title: "Website Translation",
       value: "CMS workflows, SEO/hreflang, string QA",
-      color: "text-brand-coral"
+      color: "text-brand-coral",
+      link: "/translation-services/website-translation"
     },
     {
       icon: Mic,
