@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Award, CheckCircle, FileText, Shield, Users, Clock } from "lucide-react";
@@ -46,11 +48,16 @@ const DocumentTranslation = () => {
     "Technical document translation"
   ];
 
-  const testimonials = [
-    { quote: "Great experience!", author: "Alexandra Perez-Garcia" },
-    { quote: "Excellent services!", author: "Sang Hu" },
-    { quote: "Metaphrasis carry the strength, the professional compassion, and the steadfastness of a mythical Pelican.", author: "Jos. G. Janvier" }
-  ];
+  const navigate = useNavigate();
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleGetQuote = () => {
+    navigate('/translation-services#quote-form');
+  };
 
   return (
     <>
@@ -89,7 +96,7 @@ const DocumentTranslation = () => {
               The problem with many apps and websites is that they don't go beyond providing literal word-for-word translations. When partnering with us, you will have access to a nationwide network of professional translators, including professionals certified by the American Translators Association (ATA), who understand how important it is to convey exactly the right meaning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-brand-teal hover:bg-brand-teal/90">
+              <Button size="lg" className="bg-brand-teal hover:bg-brand-teal/90" onClick={handleGetQuote}>
                 Get a Quote
               </Button>
               <Button size="lg" variant="outline">
@@ -123,27 +130,21 @@ const DocumentTranslation = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <Card
+                <div
                   key={index}
-                  className="p-6 hover:shadow-lg transition-shadow animate-fade-in"
+                  className="text-center animate-fade-in group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-brand-teal/10 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-brand-teal" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                      <p className="text-muted-foreground">{benefit.description}</p>
-                    </div>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-teal/10 mb-4 group-hover:bg-brand-teal/20 transition-colors">
+                    <Icon className="w-8 h-8 text-brand-teal" />
                   </div>
-                </Card>
+                  <h3 className="text-lg font-bold mb-2">{benefit.title}</h3>
+                  <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                </div>
               );
             })}
           </div>
@@ -207,30 +208,6 @@ const DocumentTranslation = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-secondary/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6">
-              Reviews from Our <span className="text-brand-teal">Clients</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="p-6 text-center animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <p className="text-lg italic mb-4">"{testimonial.quote}"</p>
-                <p className="font-semibold text-brand-teal">— {testimonial.author}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-brand-teal text-white">
         <div className="container mx-auto px-6">
@@ -242,7 +219,7 @@ const DocumentTranslation = () => {
               Give us a call at (815) 464-1423 to learn more about our document translation services in Chicago, IL and throughout the country.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-brand-teal hover:bg-white/90">
+              <Button size="lg" variant="secondary" className="bg-white text-brand-teal hover:bg-white/90" onClick={handleGetQuote}>
                 Get a Quote
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
