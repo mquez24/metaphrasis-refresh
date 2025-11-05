@@ -11,6 +11,7 @@ import AudioTranscription from "./pages/AudioTranscription";
 import VoiceOver from "./pages/VoiceOver";
 import Braille from "./pages/Braille";
 import InterpretationServices from "./pages/InterpretationServices";
+import OnSiteInterpreting from "./pages/OnSiteInterpreting";
 import Industries from "./pages/Industries";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/translation-services/voice-over" element={<VoiceOver />} />
           <Route path="/translation-services/braille" element={<Braille />} />
           <Route path="/interpretation-services" element={<InterpretationServices />} />
+          <Route path="/interpretation-services/on-site-interpreting" element={<OnSiteInterpreting />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />

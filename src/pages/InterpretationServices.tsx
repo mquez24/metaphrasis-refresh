@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Users, Phone, Video, Hand, Briefcase, GraduationCap, Building2, Heart, Scale, Clock, Award, Globe, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const InterpretationServices = () => {
   const services = [
@@ -167,10 +168,17 @@ const InterpretationServices = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <a href="#contact" className="text-brand-teal hover:text-brand-teal/80 transition-colors font-medium inline-flex items-center group">
-                    Learn More
-                    <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                  </a>
+                  {index === 0 ? (
+                    <Link to="/interpretation-services/on-site-interpreting" className="text-brand-teal hover:text-brand-teal/80 transition-colors font-medium inline-flex items-center group">
+                      Learn More
+                      <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
+                  ) : (
+                    <a href="#contact" className="text-brand-teal hover:text-brand-teal/80 transition-colors font-medium inline-flex items-center group">
+                      Learn More
+                      <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                  )}
                 </Card>
               );
             })}
