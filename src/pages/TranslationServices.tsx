@@ -60,7 +60,8 @@ const TranslationServices = () => {
       icon: Volume2,
       title: "Voice Over",
       value: "Casting, timing to picture, usage rights",
-      color: "text-brand-green"
+      color: "text-brand-green",
+      link: "/translation-services/voice-over"
     },
     {
       icon: Eye,
