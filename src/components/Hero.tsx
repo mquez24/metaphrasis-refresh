@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,8 +20,10 @@ const Hero = () => {
                   Request a Quote
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Learn How We Can Help
+              <Button size="lg" variant="outline" className="text-lg" asChild>
+                <Link to="/about">
+                  Learn How We Can Help
+                </Link>
               </Button>
             </div>
           </div>
