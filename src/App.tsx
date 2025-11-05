@@ -13,6 +13,7 @@ import Braille from "./pages/Braille";
 import InterpretationServices from "./pages/InterpretationServices";
 import OnSiteInterpreting from "./pages/OnSiteInterpreting";
 import OverPhoneInterpreter from "./pages/OverPhoneInterpreter";
+import VideoRemoteInterpreter from "./pages/VideoRemoteInterpreter";
 import Industries from "./pages/Industries";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/interpretation-services" element={<InterpretationServices />} />
           <Route path="/interpretation-services/on-site-interpreting" element={<OnSiteInterpreting />} />
           <Route path="/interpretation-services/over-phone-interpreter" element={<OverPhoneInterpreter />} />
+          <Route path="/interpretation-services/video-remote-interpretation" element={<VideoRemoteInterpreter />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
