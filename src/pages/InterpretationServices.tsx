@@ -183,6 +183,11 @@ const InterpretationServices = () => {
                       Learn More
                       <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
                     </Link>
+                  ) : index === 3 ? (
+                    <Link to="/interpretation-services/sign-language-services" className="text-brand-green hover:text-brand-green/80 transition-colors font-medium inline-flex items-center group">
+                      Learn More
+                      <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
                   ) : (
                     <a href="#contact" className="text-brand-teal hover:text-brand-teal/80 transition-colors font-medium inline-flex items-center group">
                       Learn More
