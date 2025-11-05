@@ -74,21 +74,21 @@ const Contact = () => {
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-20 bg-background">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {/* Phone Card */}
             <a 
-              href="tel:+13126609660" 
-              className="group flex items-center gap-6 p-8 rounded-xl bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
+              href="tel:+18154641423" 
+              className="group flex items-center gap-4 p-5 rounded-lg bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              <div className="w-16 h-16 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
-                <Phone className="w-8 h-8 text-brand-teal" />
+              <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
+                <Phone className="w-5 h-5 text-brand-teal" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-xl mb-1">Phone</h3>
-                <p className="text-lg text-muted-foreground group-hover:text-brand-teal transition-colors">
-                  (312) 660-9660
+                <h3 className="font-semibold text-base mb-0.5">Phone</h3>
+                <p className="text-sm text-muted-foreground group-hover:text-brand-teal transition-colors">
+                  (815) 464-1423
                 </p>
               </div>
             </a>
@@ -96,14 +96,14 @@ const Contact = () => {
             {/* Email Card */}
             <a 
               href="mailto:info@metaphrasislcs.com" 
-              className="group flex items-center gap-6 p-8 rounded-xl bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
+              className="group flex items-center gap-4 p-5 rounded-lg bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              <div className="w-16 h-16 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
-                <Mail className="w-8 h-8 text-brand-teal" />
+              <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
+                <Mail className="w-5 h-5 text-brand-teal" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-xl mb-1">Email</h3>
-                <p className="text-lg text-muted-foreground group-hover:text-brand-teal transition-colors break-all">
+                <h3 className="font-semibold text-base mb-0.5">Email</h3>
+                <p className="text-sm text-muted-foreground group-hover:text-brand-teal transition-colors break-all">
                   info@metaphrasislcs.com
                 </p>
               </div>
@@ -111,31 +111,31 @@ const Contact = () => {
 
             {/* Office Card */}
             <a 
-              href="https://maps.google.com/?q=130+E+Randolph+St,+Chicago,+IL+60601" 
+              href="https://maps.google.com/?q=1147+W+Ohio+St+STE+306,+Chicago,+IL+60642" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center gap-6 p-8 rounded-xl bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
+              className="group flex items-center gap-4 p-5 rounded-lg bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 hover:from-brand-teal/10 hover:to-brand-teal/15 transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              <div className="w-16 h-16 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
-                <MapPin className="w-8 h-8 text-brand-teal" />
+              <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal/30 transition-all duration-300">
+                <MapPin className="w-5 h-5 text-brand-teal" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-xl mb-1">Office</h3>
-                <p className="text-lg text-muted-foreground group-hover:text-brand-teal transition-colors">
-                  130 E Randolph St<br />
-                  Chicago, IL 60601
+                <h3 className="font-semibold text-base mb-0.5">Office</h3>
+                <p className="text-sm text-muted-foreground group-hover:text-brand-teal transition-colors">
+                  1147 W Ohio St STE 306<br />
+                  Chicago, IL 60642
                 </p>
               </div>
             </a>
 
             {/* Business Hours Card */}
-            <div className="flex items-center gap-6 p-8 rounded-xl bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 shadow-sm">
-              <div className="w-16 h-16 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0">
-                <Clock className="w-8 h-8 text-brand-teal" />
+            <div className="flex items-center gap-4 p-5 rounded-lg bg-gradient-to-br from-brand-teal/5 to-brand-teal/10 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center flex-shrink-0">
+                <Clock className="w-5 h-5 text-brand-teal" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-xl mb-1">Hours</h3>
-                <p className="text-lg text-muted-foreground">
+                <h3 className="font-semibold text-base mb-0.5">Hours</h3>
+                <p className="text-sm text-muted-foreground">
                   Mon - Fri: 8am - 6pm<br />
                   Sat - Sun: Closed
                 </p>
