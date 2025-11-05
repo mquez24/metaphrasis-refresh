@@ -237,30 +237,6 @@ const WebsiteTranslation = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-brand-coral/10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6">
-              Reviews from Our <span className="text-brand-coral">Clients</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="p-6 text-center animate-fade-in hover:shadow-lg transition-shadow"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <p className="text-sm italic mb-4">"{testimonial.quote}"</p>
-                <p className="font-semibold text-brand-coral">— {testimonial.author}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-brand-coral text-white">
         <div className="container mx-auto px-6">
