@@ -219,23 +219,23 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Quote CTA Section */}
+      {/* E-List CTA Section */}
       <section className="py-16 bg-brand-teal/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Need expert language support?
+              Join Our E-List
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Get a customized quote for your translation, interpretation, or accessibility needs.
+              Stay connected with the latest updates, insights, and community stories from Metaphrasis.
             </p>
             <Button 
               size="lg" 
               className="bg-brand-teal hover:bg-brand-teal/90 text-white"
               asChild
             >
-              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
-                Request a Quote
+              <a href="https://lp.constantcontactpages.com/su/rhVFBPH/signup" target="_blank" rel="noopener noreferrer">
+                Join Now
               </a>
             </Button>
           </div>
