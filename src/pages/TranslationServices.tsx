@@ -53,7 +53,8 @@ const TranslationServices = () => {
       icon: Mic,
       title: "Audio Transcription",
       value: "Timestamps, speaker labels, glossary injection",
-      color: "text-brand-yellow"
+      color: "text-brand-yellow",
+      link: "/translation-services/audio-transcription"
     },
     {
       icon: Volume2,
