@@ -95,23 +95,23 @@ const Careers = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto space-y-6">
+          <div className="max-w-4xl mx-auto space-y-4">
             {benefits.map((benefit, index) => (
               <div 
                 key={index}
-                className="group bg-background rounded-lg p-8 hover:shadow-xl transition-all duration-300 border border-border hover:border-brand-teal/30"
+                className="group bg-background rounded-lg p-6 hover:shadow-xl transition-all duration-300 border border-border hover:border-brand-teal/30"
               >
-                <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex flex-col md:flex-row gap-4 items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 rounded-2xl bg-brand-teal/10 flex items-center justify-center group-hover:bg-brand-teal group-hover:scale-110 transition-all duration-300">
-                      <benefit.icon className="w-10 h-10 text-brand-teal group-hover:text-white transition-colors" />
+                    <div className="w-14 h-14 rounded-xl bg-brand-teal/10 flex items-center justify-center group-hover:bg-brand-teal group-hover:scale-110 transition-all duration-300">
+                      <benefit.icon className="w-7 h-7 text-brand-teal group-hover:text-white transition-colors" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-brand-teal transition-colors">
                       {benefit.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground">
                       {benefit.description}
                     </p>
                   </div>
