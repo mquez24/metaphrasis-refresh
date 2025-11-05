@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users, Heart, TrendingUp, Briefcase } from "lucide-react";
+import heroImage from "@/assets/careers-hero-banner.jpg";
 
 const Careers = () => {
   const benefits = [
@@ -60,16 +61,22 @@ const Careers = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-brand-teal/10 to-background">
+      <section className="relative pt-32 pb-24 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/85 to-brand-teal/70" />
+        </div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Join Our Team
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8">
+            <p className="text-xl md:text-2xl font-light mb-8 animate-fade-in">
               Be part of a mission to connect people across languages and cultures.
             </p>
-            <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto animate-fade-in">
               At Metaphrasis, we're more than just a language services company — we're a community of passionate professionals committed to making communication accessible for everyone.
             </p>
           </div>
@@ -88,22 +95,28 @@ const Careers = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto space-y-6">
             {benefits.map((benefit, index) => (
-              <Card 
+              <div 
                 key={index}
-                className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+                className="group bg-background rounded-lg p-8 hover:shadow-xl transition-all duration-300 border border-border hover:border-brand-teal/30"
               >
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-brand-teal/10 flex items-center justify-center mb-4 group-hover:bg-brand-teal/20 transition-colors">
-                    <benefit.icon className="w-8 h-8 text-brand-teal" />
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <div className="flex-shrink-0">
+                    <div className="w-20 h-20 rounded-2xl bg-brand-teal/10 flex items-center justify-center group-hover:bg-brand-teal group-hover:scale-110 transition-all duration-300">
+                      <benefit.icon className="w-10 h-10 text-brand-teal group-hover:text-white transition-colors" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {benefit.description}
-                  </p>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      {benefit.description}
+                    </p>
+                  </div>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
