@@ -14,8 +14,10 @@ const Hero = () => {
               Metaphrasis helps you communicate clearly, inclusively, and effectively—anytime, anywhere, in over 100 languages. From interpreting and translations to transcription, braille, and voiceover services, we empower global communication through a unique blend of advanced AI tools and expert human linguists.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg">
-                Request a Quote
+              <Button size="lg" className="text-lg" asChild>
+                <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                  Request a Quote
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg">
                 Learn How We Can Help

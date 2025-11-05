@@ -228,8 +228,10 @@ const Industries = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Request a quote today to see how Metaphrasis can support your communication goals.
             </p>
-            <Button size="lg" className="text-lg px-8">
-              Request a Quote
+            <Button size="lg" className="text-lg px-8" asChild>
+              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                Request a Quote
+              </a>
             </Button>
           </div>
         </div>

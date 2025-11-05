@@ -35,8 +35,10 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" size="sm">
-              Request a Quote
+            <Button variant="default" size="sm" asChild>
+              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                Request a Quote
+              </a>
             </Button>
           </div>
 
@@ -63,8 +65,10 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="w-full">
-              Request a Quote
+            <Button variant="default" size="sm" className="w-full" asChild>
+              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                Request a Quote
+              </a>
             </Button>
           </div>
         )}

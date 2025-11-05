@@ -299,8 +299,11 @@ const Blog = () => {
             variant="outline" 
             size="lg" 
             className="bg-white text-brand-teal hover:bg-white/90 border-white text-lg px-8 py-6 h-auto"
+            asChild
           >
-            Request a Quote
+            <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+              Request a Quote
+            </a>
           </Button>
           <div className="mt-8 text-white/90 text-sm">
             <a href="mailto:info@metaphrasislcs.com" className="hover:underline">

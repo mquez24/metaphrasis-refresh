@@ -214,8 +214,11 @@ const About = () => {
             <Button 
               size="lg" 
               className="bg-white text-brand-teal hover:bg-white/90 text-lg px-8 py-6 mb-6"
+              asChild
             >
-              Request a Quote
+              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                Request a Quote
+              </a>
             </Button>
             <p className="text-white/90 text-sm">
               <a href="mailto:info@metaphrasislcs.com" className="hover:underline">info@metaphrasislcs.com</a>

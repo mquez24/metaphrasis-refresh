@@ -15,8 +15,10 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" variant="secondary" className="text-lg">
-              Request a Quote
+            <Button size="lg" variant="secondary" className="text-lg" asChild>
+              <a href="https://wkf.ms/47CpWLq" target="_blank" rel="noopener noreferrer">
+                Request a Quote
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg border-background bg-background !text-foreground hover:bg-background/80">
               Contact Us
